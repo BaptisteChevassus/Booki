@@ -24,27 +24,30 @@
 <body>
     <!-- Container 1: Navbar + Search + Filters -->
     <div class="main-container">
-        <header class="navbar">
-            <img class="logo-navbar" src="./images/logo/Booki.png" alt="Booki logo navbar">
-            <ul>
-                <li><a href="#hebergements">Hébergements</a></li>
-                <li><a href="#activites">Activités</a></li>
-            </ul>
+        <header>
+            <nav class="navbar">
+                <img class="logo-navbar" src="./images/logo/Booki.png" alt="Booki logo navbar">
+                <ul>
+                    <li><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activites">Activités</a></li>
+                </ul>
+            </nav>
         </header>
 
         <main>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
-            <div class="searchbar">
+            <form class="searchbar" action="#" role="search">
                 <div class="search-icon">
                     <i class="fa-solid fa-location-dot"></i>
                 </div>
-                <input type="text" id="site-search" name="q" placeholder="Rechercher" />
+                <label for="site-search" class="sr-only">Ville</label>
+                <input type="text" id="site-search" name="q" placeholder="Marseille, France" title="Entrez une ville" />
                 <button type="submit">
                     <span class="button-text">Rechercher</span>
                     <i class="fa-solid fa-magnifying-glass button-icon"></i>
                 </button>
-            </div>
+            </form>
 
             <div class="filter-section">
                 <p class="bold-text">Filtres</p>
