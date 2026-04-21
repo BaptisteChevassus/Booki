@@ -406,14 +406,6 @@ footer {
         justify-content: space-between;
     }
 
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
-
     .filter-section {
         flex-wrap: wrap;
     }
